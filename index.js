@@ -1,13 +1,15 @@
 class Heroi {
-    construtor(nome, idade, tipo) {
+    constructor(nome, idade, tipo) {
         this.nome = nome;
         this.idade = idade;
         this.tipo = tipo;
     }
 
     atacar() {
+        let ataque = "";
+
         if (this.tipo === "mago") {
-            atque = "magia";
+            ataque = "magia";
         } else if (this.tipo === "guerreiro") {
             ataque = "espada";
         } else if (this.tipo === "monge") {
@@ -16,7 +18,7 @@ class Heroi {
             ataque = "shuriken";
         }
 
-        console.log(`O ${this.tipo} atacaou usando ${ataque}`);
+        console.log(`O ${this.tipo} atacou usando ${ataque}`);
     }
 }
 
